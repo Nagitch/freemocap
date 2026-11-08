@@ -1,15 +1,15 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.13' and sys_platform == 'darwin'",
-    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
-    "python_full_version < '3.12' and sys_platform == 'darwin'",
     "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux'",
-    "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'linux'",
-    "python_full_version < '3.12' and platform_machine == 'x86_64' and sys_platform == 'linux'",
     "python_full_version >= '3.13' and platform_machine == 'AMD64' and sys_platform == 'win32'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'linux'",
     "python_full_version == '3.12.*' and platform_machine == 'AMD64' and sys_platform == 'win32'",
+    "python_full_version < '3.12' and sys_platform == 'darwin'",
+    "python_full_version < '3.12' and platform_machine == 'x86_64' and sys_platform == 'linux'",
     "python_full_version < '3.12' and platform_machine == 'AMD64' and sys_platform == 'win32'",
 ]
 supported-markers = [
@@ -491,8 +491,9 @@ wheels = [
 
 [[package]]
 name = "freemocap"
-version = "2.0.0a24"
+version = "2.0.0a25"
 source = { editable = "." }
+default-groups = ["tracker-default"]
 dependencies = [
     { name = "beartype" },
     { name = "freemocap-blender-addon" },
@@ -564,7 +565,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.7.2" },
     { name = "scipy-stubs", specifier = "~=1.17.1" },
     { name = "skelly-synchronize", git = "https://github.com/freemocap/skellysync?branch=philip%2Frewrite" },
-    { name = "skellycam", git = "https://github.com/freemocap/skellycam?branch=main" },
+    { name = "skellycam", git = "https://github.com/Nagitch/skellycam?rev=e3547e4dc1f145156e378a751b12fc1d35cc1f4c" },
     { name = "skellyforge", git = "https://github.com/freemocap/skellyforge?branch=main" },
     { name = "skellylogs", git = "https://github.com/freemocap/skellylogs" },
     { name = "skellypings", git = "https://github.com/freemocap/skellypings" },
@@ -2056,10 +2057,10 @@ version = "1.18.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.13' and sys_platform == 'darwin'",
-    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
     "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux'",
-    "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'linux'",
     "python_full_version >= '3.13' and platform_machine == 'AMD64' and sys_platform == 'win32'",
+    "python_full_version == '3.12.*' and sys_platform == 'darwin'",
+    "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'linux'",
     "python_full_version == '3.12.*' and platform_machine == 'AMD64' and sys_platform == 'win32'",
 ]
 dependencies = [
@@ -2165,7 +2166,7 @@ dependencies = [
 [[package]]
 name = "skellycam"
 version = "2.0.0a6"
-source = { git = "https://github.com/freemocap/skellycam?branch=main#26509b06ba44980b3ccaae7c9c5f4efab4e88c90" }
+source = { git = "https://github.com/Nagitch/skellycam?rev=e3547e4dc1f145156e378a751b12fc1d35cc1f4c#e3547e4dc1f145156e378a751b12fc1d35cc1f4c" }
 dependencies = [
     { name = "av" },
     { name = "beartype" },

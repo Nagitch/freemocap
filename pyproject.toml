@@ -40,7 +40,7 @@ cuda = ["skellytracker[all-cuda]"]
 cpu = ["skellytracker[all-cpu]"]
 
 [tool.uv.sources]
-skellycam = { git = "https://github.com/freemocap/skellycam", branch = "main" }
+skellycam = { git = "https://github.com/Nagitch/skellycam", rev = "e3547e4dc1f145156e378a751b12fc1d35cc1f4c" }
 skellytracker = { git = "https://github.com/freemocap/skellytracker", branch = "main"}
 skellyforge = { git = "https://github.com/freemocap/skellyforge", branch = "main" }
 skelly_synchronize = { git = "https://github.com/freemocap/skellysync", branch = "philip/rewrite" }

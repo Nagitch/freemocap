@@ -169,3 +169,6 @@ upx.exe
 /CLAUDE.md
 .aider*
 freemocap-ui/freemocap_server
+
+# Isolated MUJINA development state
+.mujina-data/
