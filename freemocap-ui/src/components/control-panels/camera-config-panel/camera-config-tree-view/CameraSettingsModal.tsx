@@ -124,6 +124,18 @@ export const CameraSettingsModal: React.FC<CameraSettingsModalProps> = ({camera,
                     />
                 </Row>
 
+                <Row label="Frame rate">
+                    <NameDropdownSelector
+                        options={Array.from(new Set(['Device default', '24 fps', '30 fps', '60 fps',
+                            ...(config.framerate > 0 ? [`${config.framerate} fps`] : [])]))}
+                        initialValue={config.framerate > 0 ? `${config.framerate} fps` : 'Device default'}
+                        onChange={label => handleConfigChange({
+                            framerate: label === 'Device default' ? -1 : Number.parseFloat(label),
+                        })}
+                    />
+                </Row>
+                <p className="text sm text-gray">Requested FPS; actual device rate may differ. Device default leaves the current rate unchanged.</p>
+
                 {/* Exposure mode */}
                 <Row label="Exposure">
                     <NameDropdownSelector

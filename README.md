@@ -1,3 +1,9 @@
+# MUJINA fork
+
+Status: experiment
+
+See [MUJINA camera FPS setup, branch policy, and P4 validation](docs/mujina/camera-fps.md).
+
 
 # SPECIAL INSTRUCTIONS FOR THE `/development` BRANCH 
 

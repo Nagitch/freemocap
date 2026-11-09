@@ -1,0 +1,158 @@
+[
+  {
+    "camera_count": 1,
+    "apply_response": {
+      "group_id": "4cc9c7",
+      "camera_configs": {
+        "b219": {
+          "camera_id": "b219",
+          "camera_index": 0,
+          "camera_name": "C922 Pro Stream Webcam",
+          "use_this_camera": true,
+          "resolution": {
+            "height": 720,
+            "width": 1280
+          },
+          "color_channels": 3,
+          "pixel_format": "RGB",
+          "exposure_mode": "AUTO",
+          "exposure": 0,
+          "framerate": 60.00024,
+          "rotation": -1,
+          "capture_fourcc": "MJPG",
+          "writer_fourcc": "X264"
+        }
+      }
+    },
+    "payloads": 773,
+    "counts": [
+      1
+    ],
+    "capture_frame_progress_fps": 59.42212310305501,
+    "preview_payload_fps": 38.61437629255763,
+    "last_framerate_update": {
+      "camera_group_id": "4cc9c7",
+      "backend_framerate": {
+        "mean_frame_duration_ms": 17.260487153846153,
+        "mean_frames_per_second": 57.93579237288039,
+        "frame_duration_max": 24.3777705,
+        "frame_duration_min": 15.679427,
+        "frame_duration_mean": 17.260487153846153,
+        "frame_duration_stddev": 2.981669209994953,
+        "frame_duration_median": 15.998771,
+        "frame_duration_coefficient_of_variation": 0.1727453682748779,
+        "calculation_window_size": 13,
+        "framerate_source": "Server"
+      },
+      "frontend_framerate": {
+        "mean_frame_duration_ms": 25.383018444444446,
+        "mean_frames_per_second": 39.396417813298676,
+        "frame_duration_max": 27.168334,
+        "frame_duration_min": 23.382791,
+        "frame_duration_mean": 25.383018444444446,
+        "frame_duration_stddev": 1.2948951311772199,
+        "frame_duration_median": 25.470458,
+        "frame_duration_coefficient_of_variation": 0.05101422961226395,
+        "calculation_window_size": 9,
+        "framerate_source": "Display"
+      },
+      "message_type": "framerate_update"
+    }
+  },
+  {
+    "camera_count": 3,
+    "apply_response": {
+      "group_id": "0a4026",
+      "camera_configs": {
+        "b219": {
+          "camera_id": "b219",
+          "camera_index": 0,
+          "camera_name": "C922 Pro Stream Webcam",
+          "use_this_camera": true,
+          "resolution": {
+            "height": 720,
+            "width": 1280
+          },
+          "color_channels": 3,
+          "pixel_format": "RGB",
+          "exposure_mode": "AUTO",
+          "exposure": 0,
+          "framerate": 60.00024,
+          "rotation": -1,
+          "capture_fourcc": "MJPG",
+          "writer_fourcc": "X264"
+        },
+        "34dd": {
+          "camera_id": "34dd",
+          "camera_index": 1,
+          "camera_name": "C922 Pro Stream Webcam",
+          "use_this_camera": true,
+          "resolution": {
+            "height": 720,
+            "width": 1280
+          },
+          "color_channels": 3,
+          "pixel_format": "RGB",
+          "exposure_mode": "AUTO",
+          "exposure": 0,
+          "framerate": 60.00024,
+          "rotation": -1,
+          "capture_fourcc": "MJPG",
+          "writer_fourcc": "X264"
+        },
+        "8370": {
+          "camera_id": "8370",
+          "camera_index": 2,
+          "camera_name": "C922 Pro Stream Webcam",
+          "use_this_camera": true,
+          "resolution": {
+            "height": 720,
+            "width": 1280
+          },
+          "color_channels": 3,
+          "pixel_format": "RGB",
+          "exposure_mode": "AUTO",
+          "exposure": 0,
+          "framerate": 60.00024,
+          "rotation": -1,
+          "capture_fourcc": "MJPG",
+          "writer_fourcc": "X264"
+        }
+      }
+    },
+    "payloads": 805,
+    "counts": [
+      3
+    ],
+    "capture_frame_progress_fps": 58.82013136613023,
+    "preview_payload_fps": 40.24798776031379,
+    "last_framerate_update": {
+      "camera_group_id": "0a4026",
+      "backend_framerate": {
+        "mean_frame_duration_ms": 16.9185005,
+        "mean_frames_per_second": 59.10689307246821,
+        "frame_duration_max": 19.17994784375,
+        "frame_duration_min": 15.7636456875,
+        "frame_duration_mean": 16.9185005,
+        "frame_duration_stddev": 1.2624423821230177,
+        "frame_duration_median": 16.13734715625,
+        "frame_duration_coefficient_of_variation": 0.07461904689029726,
+        "calculation_window_size": 14,
+        "framerate_source": "Server"
+      },
+      "frontend_framerate": {
+        "mean_frame_duration_ms": 24.674108300000004,
+        "mean_frames_per_second": 40.5283136412269,
+        "frame_duration_max": 26.1425,
+        "frame_duration_min": 23.5335,
+        "frame_duration_mean": 24.674108300000004,
+        "frame_duration_stddev": 0.859746926409865,
+        "frame_duration_median": 24.553354,
+        "frame_duration_coefficient_of_variation": 0.03484409308561983,
+        "calculation_window_size": 10,
+        "framerate_source": "Display"
+      },
+      "message_type": "framerate_update"
+    }
+  }
+]

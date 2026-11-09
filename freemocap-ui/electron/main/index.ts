@@ -19,6 +19,11 @@ export const APP_ENVIRONMENT = {
 // if (os.release().startsWith('6.1')) app.disableHardwareAcceleration();
 if (process.platform === 'win32') app.setAppUserModelId(app.getName());
 
+// Give source experiments their own preferences and camera settings.
+if (!app.isPackaged && process.env.FREEMOCAP_USER_DATA_DIR) {
+    app.setPath('userData', process.env.FREEMOCAP_USER_DATA_DIR);
+}
+
 // Prevent multiple instances
 const gotTheLock = app.requestSingleInstanceLock();
 

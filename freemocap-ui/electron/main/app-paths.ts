@@ -48,6 +48,11 @@ const getDefaultInstallUnpackedPath = (): string => {
 
 // Python server executable candidates in order of preference.
 export const PYTHON_EXECUTABLE_CANDIDATES = [
+    ...(!app.isPackaged && process.env.FREEMOCAP_SERVER_EXECUTABLE ? [{
+        name: 'mujina-development',
+        path: process.env.FREEMOCAP_SERVER_EXECUTABLE,
+        description: 'Explicit source-development server',
+    }] : []),
     {
         name: 'bundled',
         path: serverPathIn(getResourcesPath()),
